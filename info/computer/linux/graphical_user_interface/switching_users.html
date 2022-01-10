@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switching Users</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>Switching Users</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/switching_users.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        Linux is a true multi-user operating system, which allows more than one user to be
+                        simultaneously logged in. <br><br> 
+                        If more than one person uses the system, it is best for each person to
+                        have their own user account and password. This allows for individualized settings, home
+                        directories, and other files. Users can take turns using the machine, while keeping everyone's
+                        sessions alive, or even be logged in simultaneously through the network. <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/switching_users.png" alt="switching_users">
+                        <figcaption>Switching Users</figcaption>
+                    </figure> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="locking_the_screen.html" class="previous">&laquo;
+        Previous</a>
+    <a href="shutting_down_and_restarting.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attacks</title>
+    <link rel="stylesheet" href="assets/css/welcome.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#main_header').load('/header_footer/main_header.html')
+        });
+        $(function () {
+            $('#main_footer').load('/header_footer/main_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+    <div id="main_header"></div>
+
+
+    <div class="title">
+        <h1>Attacks</h1>
+    </div>
+
+
+
+
+
+
+    <div id="main_footer"></div>
+
+
+
+
+    <script>
+        function search_card() {
+            let input = document.getElementById('searchbar').value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('card');
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                }
+                else {
+                    x[i].style.display = "list-item";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

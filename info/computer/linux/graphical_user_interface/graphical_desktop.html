@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphical Desktop</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>Graphical Desktop</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/graphical_desktop.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        You can use either a Command Line Interface (CLI) or a Graphical User Interface (GUI) when using
+                        Linux. To work at the CLI, you have to remember which programs and commands are used to perform
+                        tasks, and how to quickly and accurately obtain more information about their use and options. On
+                        the other hand, using the GUI is often quick and easy. It allows you to interact with your
+                        system through graphical icons and screens. For repetitive tasks, the CLI is often more
+                        efficient, while the GUI is easier to navigate if you do not remember all the details or do
+                        something only rarely. <br><br>
+
+                        We will learn how to manage sessions using the GUI for the three Linux distribution families.
+                        Since we are using the GNOME-based variant of Linux (which is most popularly used) rather than the KDE-based
+                        one, all are actually quite similar. If you are using KDE (or other Linux desktops such as
+                        XFCE), your experience will vary somewhat, but not in any intrinsically
+                        difficult way, as user interfaces have converged to certain well-known behaviors on modern
+                        operating systems. In the upcoming sessions, we will concentrate in great detail on
+                        the command line interface, which is pretty much the same on all distributions. <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/linux_gui_example.png" alt="linux_gui_example">
+                        <figcaption>GUI of different Linux Distros</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/info/computer/linux/linux_distributions/linux_installation_warning.html" class="previous">&laquo;
+        Previous</a>
+    <a href="x_windows_system.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<div class="wrapper" style="text-decoration: none;">
+    <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content1">
+            <div class="logo"><a href="/landingpage.html">Cyber</a></div>
+            <ul class="links">
+                <li><a href="/landingpage.html">Home</a></li>
+                <li><a href="/dictonary.html">Dictonary</a></li>
+                <li><a href="/attacks.html">Attacks</a></li>
+                <li><a href="/cyberlaw.html">Cyber Law</a></li>
+                <li><a href="/cybernews.html">Cyber News</a></li>
+                <li><a href="/casestudy.html">Case Studies</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<script>
+    function search_card() {
+        let input = document.getElementById('searchbar').value
+        input = input.toLowerCase();
+        let x = document.getElementsByClassName('card');
+
+        for (i = 0; i < x.length; i++) {
+            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display = "none";
+            }
+            else {
+                x[i].style.display = "list-item";
+            }
+        }
+    }
+</script>

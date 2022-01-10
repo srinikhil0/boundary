@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="assets/css/welcome.css">
+    <link rel="shortcut icon" href="assets/images/logos/GSN1.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#main_header').load('/header_footer/main_header.html')
+        });
+        $(function () {
+            $('#main_footer').load('/header_footer/main_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+    <div id="main_header"></div>
+
+
+    <div class="title">
+        <h1>Welcome<br />To<br />Cyber Space</h1>
+    </div>
+
+    <div class="out_about">
+        <div class="about">
+            <div class="in_about">
+                <h2>About Website</h2><br>
+                <div class="about_info">
+                    <p>This is the space on the entire internet where you will find road map to start you career in
+                        cyber
+                        security.</p><br><br>
+                    <p>This space is divided into 7 different sections and each section may have subsections to explore.
+                    </p>
+                    <ul>
+                        <li>Welcome</li>
+                        <li>Dictionary</li>
+                        <li>Attacks</li>
+                        <li>Cyber Laws</li>
+                        <li>Cyber News</li>
+                        <li>Case Studies</li>
+                        <li>Contact</li>
+                    </ul><br>
+                    <u>Section 1 - Welcome</u>
+                    <p>Welcome space have the introduction for the website as well as the description of every section
+                        followed by the roadmap to understand Cyber Security in a better way.</p><br>
+                    <u>Section 2 - Dictionary</u>
+                    <p>Dictonary space have all the abbrevations commonly used in and the meaning for some special
+                        words.</p><br>
+                    <u>Section 3 - Attacks</u>
+                    <p>Attacks Space have breif description of all the cyber attacks</p><br>
+                    <u>Section 4 - Cyber Law</u>
+                    <p>Cyber Law space describes the laws on cyber security violations in different countries</p><br>
+                    <u>Section 5 - Cyber News</u>
+                    <p>Cyber News space is a news blog which updates frequently with the latest cyber news around the
+                        world
+                    </p><br>
+                    <u>section 6 - Case Studies</u>
+                    <p>Case Studies space have different life time scenarios explained how it was happened</p><br>
+                    <u>Section 7 - contact</u>
+                    <p>Contact space have 2 forms. First is to contact us in which we reply you through email and Second
+                        form
+                        is to give feed back.</p><br>
+                    <p>Below there is road map, click on the tab to redirect to the respective pages to start learning.
+                    </p><br>
+                    <p>We as a team have kept our efforts to make you understand the core concepts of Cyber Security as
+                        easy as possible.</p><br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="container left">
+            <a href="info/network/netinfo.html" style="text-decoration: none; color: #000">
+                <div class="content">
+                    <h2>Networking</h2>
+                    <p>Learn, how devices talk to each other</p>
+                </div>
+            </a>
+        </div>
+        <div class="container right">
+            <a href="info/computer/computerinfo.html" style="text-decoration: none; color: #000">
+                <div class="content">
+                    <h2>Computers</h2>
+                    <p>Get to know about each part of the computer.</p>
+                </div>
+            </a>
+        </div>
+        <div class="container left">
+            <a href="info/coding/codinginfo.html" style="text-decoration: none; color: #000">
+                <div class="content">
+                    <h2>Coding</h2>
+                    <p>Start with the Basics of Programming</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="container right">
+            <a href="info/cyber_security/secinfo.html" style="text-decoration: none; color: #000">
+                <div class="content">
+                    <h2>Cyber Security Basics</h2>
+                    <p>Now, Welcome to Cyber Security</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="main_footer"></div>
+
+    <script>
+        function search_card() {
+            let input = document.getElementById('searchbar').value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('card');
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                }
+                else {
+                    x[i].style.display = "list-item";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

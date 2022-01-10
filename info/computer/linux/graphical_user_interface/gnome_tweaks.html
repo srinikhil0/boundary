@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNOME Tweaks</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>GNOME Tweaks</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/gnome_tweaks.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        Most common settings, both personal and system-wide, are to be found by clicking in the upper
+                        right-hand corner, on either a gear or other obvious icon, depending on your Linux distribution.
+                        <br><br>
+                        However, there are many settings which many users would like to modify which are not thereby
+                        accessible; the default settings utility is unfortunately rather limited in modern GNOME-based
+                        distributions. Unfortunately, the quest for simplicity has actually made it difficult to adapt
+                        your system to your tastes and needs. <br><br>
+                        Fortunately, there is a standard utility, gnome-tweaks, which exposes many more setting options.
+                        It also permits you to easily install extensions by external parties. Not all Linux
+                        distributions install this tool by default, but it is always available (older distributions used
+                        the name gnome-tweak-tool). You may have to run it by hitting Alt-F2 and then typing in the
+                        name. <br><br>
+                        some recent distributions have taken most of the functionality out of this tool and placed it in
+                        a new one, called <b>gnome-extensions-app.</b> <br><br>
+                        In the screenshot below, the keyboard mapping is being adjusted so the useless CapsLock key can
+                        be used as an additional Ctrl key; this saves users who use Ctrl a lot (such as emacs
+                        aficionados) from getting physically damaged by pinkie strain. <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/gnome_tweak_tool.png" alt="gnome_tweaks">
+                        <figcaption>GNOME Tweaks Tool</figcaption>
+                    </figure> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="customizing_the_desktop_background.html" class="previous">&laquo;
+        Previous</a>
+    <a href="changing_the_theme.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

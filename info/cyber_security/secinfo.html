@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="../../assets/css/net_info.css">
+    <link rel="stylesheet" href="../../assets/fontawesome/css/all.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content1">
+                <div class="logo"><a href="#">Cyber</a></div>
+                <ul class="links">
+                    <li><a href="../../landingpage.html">Home</a></li>
+                    <li><a href="#">Dictonary</a></li>
+                    <li>
+                        <a href="#" class="desktop-link">Modules</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Modules</label>
+                        <ul>
+                            <li><a href="../network/netinfo.html">Networking</a></li>
+                            <li><a href="../computer/computerinfo.html">Computers</a></li>
+                            <li><a href="../coding/codinginfo.html">Coding</a></li>
+                            <li><a href="#">Cyber Security Basics</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" id="searchbar" onkeyup="search_card()" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+        </nav>
+    </div>
+
+    <footer>
+        <div class="container1">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>We as a team kept all our efforts to make easy understanding of the concepts in this cyber world.</p><br>
+                <p>We deliver extrodinary content frequently, which is available for free.</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="welcome.html">Welcome</a></li>
+                    <li><a href="dictonary.html">Dictionary</a></li>
+                    <li><a href="attacks.html">Attacks</a></li>
+                    <li><a href="cyberlaw.html">Cyber Law</a></li>
+                    <li><a href="cybernews.html">Cyber News</a></li>
+                    <li><a href="casestudy.html">Case Studies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+                        <span>Freedom office <br> Whitefield, EPIP phase II, <br>Bangalore, India</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-mobile-alt" aria-hidden="true"></i></span>
+                        <p><a href="tel:123456789">+91 7338914417</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:srinikhilreddy99@gmail.com">srinikhilreddy99@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright &#169 2021 Online Tutorials. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        function search_card() {
+            let input = document.getElementById('searchbar').value
+            input=input.toLowerCase();
+            let x = document.getElementsByClassName('card');
+              
+            for (i = 0; i < x.length; i++) { 
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display="none";
+                }
+                else {
+                    x[i].style.display="list-item";                 
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

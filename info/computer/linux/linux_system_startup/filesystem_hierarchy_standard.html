@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Filesystem Hierarchy Standard</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>The Filesystem Hierarchy Standard</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/linux_filesystem_hierarchy_standard.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        Linux systems store their important files according to a standard layout called the Filesystem
+                        Hierarchy Standard (FHS), which has long been maintained by the Linux Foundation. Having a
+                        standard is designed to ensure that users, administrators, and
+                        developers can move between distributions without having to re-learn how the system is
+                        organized. <br><br>
+                        Linux uses the ‘/’ character to separate paths (unlike Windows, which uses ‘\’), and does not
+                        have drive letters. Multiple drives and/or partitions are mounted as directories in the single
+                        filesystem. Removable media such as USB drives and CDs and DVDs will show up as mounted at
+                        <code>/run/media/yourusername/disklabel</code> for recent Linux
+                        systems, or under <code>/media</code> for older distributions. <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/linux_directory_structure.jpg"
+                            alt="linux_directory_structure">
+                        <figcaption>Linux Directory Structure</figcaption>
+                    </figure><br><br>
+
+                    <p>
+                        All Linux filesystem names are case-sensitive, so /boot, /Boot, and /BOOT represent three
+                        different directories (or folders). Many distributions differentiate between core utilities needed
+                        for proper system operation and other programs, and place the latter in directories under /usr
+                        (think user). To get a sense for how the other programs are organized, find the /usr directory
+                        in the above figure represented and compare the subdirectories with those that exist
+                        directly under the system root directory (/). <br><br>
+
+                        To discuss about file hierarchy, for example, if you are a under-grad student in a university
+                        and your student code is 36110419,
+                        if you want to go to see your documents, then you need to go to the ‘root’ (/),
+                        then you are able to see a variety of directories which includes ‘home’, ‘tmp’, ‘usr’, ‘var’
+                        directories, out of which the ‘home’ directory will have all the stored general media files.
+                        From there you need to pass through ‘students’ -> ug -> 2016 -> CSE -> 36110419. Here you can see your
+                        respective accessed files/folders. <br><br>
+                        To be in technical way of representation the following is the directory
+                        structure in linux
+                        <code>/home/students/ug/2016/CSE/36110419/</code>, and
+                        a file you want to acess is report.docx on that disc would be at
+                        <code>/home/students/ug/2016/CSE/36110419/report.docx</code>.
+                        <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/linux_directory_structure_example.png"
+                            alt="linux_directory_structure_example">
+                        <figcaption>Linux Directory Structure Example</figcaption>
+                    </figure><br><br>
+                    <p>
+                        For more information, take a look at the following document: <a
+                            href="https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf" target="_blank"
+                            style="text-decoration: none; color:darkcyan">Filesystem Hierarchy
+                            Standard</a> created by LSB Workgroup, The Linux Foundation <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="partitions_and_filesystem.html" class="previous">&laquo; Previous</a>
+    <a href="/info/computer/linux/linux_distributions/choosing_a_linux_distribution.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

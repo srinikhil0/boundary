@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Windows System</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>X Windows system</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/x_windows_system.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        Generally, in a Linux desktop system, the X Window System is loaded as one of the final steps in
+                        the boot process. It is often just called X. <br><br>
+                        A service called the Display Manager keeps track of the displays being provided and loads the X
+                        server (so-called, because it provides graphical services to applications, sometimes called X
+                        clients). The display manager also handles graphical logins and starts the appropriate desktop
+                        environment after a user logs in. <br><br>
+                        X is rather old software; it dates back to the mid 1980s and, as such, has certain deficiencies
+                        on modern systems (for example, with security), as it has been stretched rather far from its
+                        original purposes. A newer system, known as <a href="https://wayland.freedesktop.org/"
+                            target="_blank" style="color: darkcyan; text-decoration:none">Wayland</a>, is gradually
+                        superseding it and
+                        is the default display system for Fedora, RHEL 8, and other recent distributions. For the most
+                        part, it
+                        looks just like X to the user, although under the hood it is quite different. <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/display_manager.png" alt="display_manager">
+                        <figcaption>Display Manager</figcaption>
+                    </figure> <br><br>
+                    <p>
+                        A desktop environment consists of a session manager, which starts and maintains the components
+                        of the graphical session, and the window manager, which controls the placement and movement of
+                        windows, window title-bars, and controls. <br><br>
+                        Although these can be mixed, generally a set of utilities, session manager, and window manager
+                        are used together as a unit, and together provide a seamless desktop environment. <br><br>
+                        If the display manager is not started by default in the default runlevel, you can start the
+                        graphical desktop different way, after logging on to a text-mode console, by running startx from
+                        the command line. Or, you can start the display manager (gdm, lightdm, kdm, xdm, etc.) manually
+                        from the command line. This differs from running startx as the display managers will project a
+                        sign in screen.<br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/desktop_environment.png" alt="desktop_environment">
+                        <figcaption>Desktop Environment</figcaption>
+                    </figure> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="graphical_desktop.html" class="previous">&laquo;
+        Previous</a>
+    <a href="gui_startup.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

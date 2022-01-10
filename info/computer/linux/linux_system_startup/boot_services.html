@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/sbin/init and Services</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+    <div id="info_header"></div>
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>/sbin/init and Services</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/boot_services.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        Once the kernel has set up all its hardware and mounted the root filesystem, the kernel runs
+                        /sbin/init. This then becomes the initial process, which then starts other processes to get the
+                        system running. <br><br> 
+                        Most other processes on the system trace their origin ultimately to init;
+                        exceptions include the so-called kernel processes. These are started by the kernel directly, and
+                        their job is to manage internal operating system details. <br><br>
+                        Besides starting the system, init is responsible for keeping the system running and for shutting
+                        it down cleanly. <br><br>
+                        One of its responsibilities is to act when necessary as a manager for all
+                        non-kernel processes; it cleans up after them upon completion, and restarts user login services
+                        as needed when users log in and out, and does the same for other background system services.
+                        <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/boot_services.png" alt="boot_services"
+                            style="display:block;margin-left:auto;margin-right:auto;width:90%;height:90%;"> <br>
+                        <figcaption style="text-align: center; color:whitesmoke; font-size:20px;">/sbin/init and
+                            Services</figcaption> <br><br>
+                    </figure>
+                    <p>
+                        Traditionally, this process startup was done using conventions that date back to the 1980s and
+                        the System V variety of UNIX. This serial process had the system passing through a sequence of
+                        runlevels containing collections of scripts that start and stop services. Each runlevel
+                        supported a different mode of running the system. Within each runlevel, individual services
+                        could be set to run, or to be shut down if running. <br><br>
+                        However, all major distributions have moved away from this sequential runlevel method of system
+                        initialization, although they usually emulate many System V utilities for compatibility
+                        purposes.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="the_linux_kernel.html" class="previous">&laquo; Previous</a>
+    <a href="linux_startup_alternatives.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

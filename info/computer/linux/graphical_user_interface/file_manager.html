@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manager</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>File Manager</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/file_manager.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        Each distribution implements the Nautilus (File Manager) utility, which is used to navigate the
+                        file system. It can locate files and, when a file is clicked upon, either it will run if it is a
+                        program, or an associated application will be launched using the file as data. This behavior is
+                        completely familiar to anyone who has used other operating systems. <br><br>
+                        To start the file manager you will have to click on its icon (a file cabinet) which is easily
+                        found, usually under Favorites or Accessories. It will have the name Files. <br><br>
+                        This will open a window with your Home directory displayed. The left panel of the File Manager
+                        window holds a list of commonly used directories, such as Desktop, Documents, Downloads and
+                        Pictures. <br><br>
+                        You can click the <i>Magnifying Glass</i> icon on the top-right to search for files or
+                        directories (folders). <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/file_manager.png" alt="file_manager">
+                        <figcaption>File Manager in Ubuntu</figcaption>
+                    </figure> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="default_applications.html" class="previous">&laquo;
+        Previous</a>
+    <a href="home_directories.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

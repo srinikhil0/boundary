@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOS</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+    <div id="info_header"></div>
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>BIOS - The First Step</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/bios_the_first_step.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        The full form of BIOS is Basic Input/Output System. <br><br>
+                        To start an x86-based Linux system involves a number of steps. When the computer is powered on,
+                        the Basic Input/Output System (BIOS) initializes the hardware, including the screen and
+                        keyboard, and tests the main memory. This process is also called POST (Power On Self Test).
+                    </p><br><br>
+                    <img src="/assets/images/computers/linux/bios_step.png" alt="bios_step"
+                        style="margin-left: auto; margin-right:auto; display:block; width:90%; height:90%;"> <br><br>
+                    <p>The BIOS software is stored on a ROM chip on the motherboard. After this, the remainder of the
+                        boot process is controlled by the operating system (OS). <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="linux_boot_processing.html" class="previous">&laquo; Previous</a>
+    <a href="master_boot_record.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

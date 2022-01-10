@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspending the system</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>Suspending the system</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/suspending_session.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        All modern computers support <b>Suspend (or Sleep) Mode</b> when you want to stop using your
+                        computer
+                        for a while. <br><br>
+                        Suspend Mode saves the current system state and allows you to resume your session
+                        more quickly while remaining on, but uses very little power in the sleeping state. It works by
+                        keeping your system’s applications, desktop, and so on, in system RAM, but turning off all of
+                        the other hardware. This shortens the time for a full system start-up as well as conserves
+                        battery power. One should note that modern Linux distributions actually boot so fast that the
+                        amount of time saved is often minor. <br><br>
+                        To suspend the system, the procedure starts the same as that for shutdown or locking the screen.
+                        <br><br>
+                        The method is quite simple and universal in most recent GNOME-based distributions. If you click
+                        on the Power icon and hold for a short time and release, you will get the double line icon
+                        displayed below, which you then click to suspend the system. Some distributions, including
+                        Ubuntu, may still show a separate Suspend icon instead of using the above method. <br><br>
+                    </p>
+                    <div class="note">
+                        <p>To wake your system and resume your session, move the mouse or press any button on the
+                            keyboard. The system will wake up with the screen locked, just as if you had manually locked
+                            it; type in your password to resume.</p> <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="shutting_down_and_restarting.html" class="previous">&laquo;
+        Previous</a>
+    <a href="basic_operations.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

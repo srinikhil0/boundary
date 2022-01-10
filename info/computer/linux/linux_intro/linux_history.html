@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="../../../../assets/css/network/network1.css">
+    <link rel="stylesheet" href="../../../../assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>The History of Linux</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="../../../../assets/audio/computer/linux/linux_history.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        Linus Torvalds was a student in Helsinki, Finland, in 1991,
+                        when he started a project: writing his own operating system kernel.<br><br>
+                        He also collected together and/or developed the other essential ingredients required to
+                        construct an entire operating system with his kernel at the center.<br><br>
+                        It wasn't long before this became known as the Linux kernel.<br><br> </p>
+                    <figure>
+                        <img src="../../../../assets/images/computers/linux/linus_torvalds.jpg" alt="linux_logo"
+                            width="100%" height="auto" text-align="center"><br><br>
+                        <figcaption style="color:white; font-family: 'Merriweather', serif; text-align:center">Linus
+                            Torvalds</figcaption>
+                    </figure> <br><br>
+                    <p>In 1992, Linux was re-licensed using the General Public License (GPL) by GNU (a project of the
+                        Free Software Foundation or FSF,
+                        which promotes freely available software), which made it possible to build a worldwide community
+                        of developers.<br><br>
+                        By combining the kernel with other system components from the GNU project, numerous other
+                        developers created complete systems called Linux distributions in the mid-90’s.<br><br>
+                        The Linux distributions created in the mid-90s provided the basis for fully free (in the sense
+                        of freedom, not zero cost) computing and became a driving force in the open source software
+                        movement. In 1998, major companies like IBM and Oracle announced their support for the Linux
+                        platform and began major development efforts as well.<br><br>
+                    </p>
+
+                    <div class=timeline>
+                        <div class="rightbox">
+                            <div class="rb-container">
+                                <div class="lb-container">
+                                    <ul class="rb">
+                                        <li class="rb-item" ng-repeat="itembx">
+                                            <div class="timestamp">
+                                                mid 90's<br>
+                                            </div>
+                                            <div class="item-title">Created for fully free computing and for open source
+                                                software development</div>
+
+                                        </li>
+                                        <li class="rb-item" ng-repeat="itembx">
+                                            <div class="timestamp">
+                                                1998<br>
+                                            </div>
+                                            <div class="item-title">Top companies like IBM and Oracle announced support
+                                            </div>
+
+                                        </li>
+
+                                        <li class="rb-item" ng-repeat="itembx">
+                                            <div class="timestamp">
+                                                Today<br>
+                                            </div>
+                                            <div class="item-title">Linux ruling the half of the servers on Internet as
+                                                well
+                                                as entire andriod world</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Today, Linux powers more than half of the servers on the Internet, the majority of
+                            smartphones
+                            (via the Android system, which is built on top of Linux), more than 90 percent of the public
+                            cloud workload, and all of the world’s most powerful supercomputers.<br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="linux.html" class="previous">&laquo; Previous</a>
+    <a href="linux_philosophy.html" class="next">Next &raquo;</a>
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

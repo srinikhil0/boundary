@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewing Files</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>Viewing Files</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/viewing_files.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        The File Manager allows you to view files and directories in more than one way. <br><br>
+                        You can switch between the Icons and List formats, either by clicking the familiar icons in the
+                        top bar, or you can press <strong>CTRL-1</strong> or <strong>CTRL-2</strong> respectively.
+                        <br><br>
+                        In addition, you can also arrange the files and directories by name, size, type, or modification
+                        date for further sorting. To do so, click <strong>View</strong> and select <strong>Arrange
+                        Items.</strong> <br><br>
+                        Another useful option is to show <i>hidden files</i> (sometimes imprecisely called system
+                        files), which
+                        are usually configuration files that are hidden by default and whose name starts with a dot. To
+                        show hidden files, select <strong>Show Hidden Files</strong> from the menu or press
+                        <strong>CTRL-H.</strong> <br><br>
+                        The file browser provides multiple ways to customize your window view to facilitate easy drag
+                        and drop file operations. You can also alter the size of the icons by selecting <strong>Zoom
+                        In</strong> and <strong>Zoom Out</strong> under the View menu. <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/viewing_files.png" alt="viewing_files">
+                        <figcaption>Viewing Files in Ubuntu</figcaption>
+                    </figure> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="home_directories.html" class="previous">&laquo;
+        Previous</a>
+    <a href="searching_files.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

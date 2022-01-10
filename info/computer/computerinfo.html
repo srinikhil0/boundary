@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Info</title>
+    <link rel="stylesheet" href="/assets/css/net_info.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/assets/css/google_translator.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+    <div class="body_wrapper">
+        <u>
+            <h1>COMPUTER</h1>
+        </u>
+
+        <div class="container2">
+            <div class="square">
+                <img src="/assets/images/computers/linux/linux.png" class="mask">
+                <div class="h1">Linux</div>
+                <div><a href="/info/computer/linux/linux_info.html" target="_" class="button">Click Here</a></div>
+            </div>
+
+            <div class="square">
+                <img src="/assets/images/computers/windows/windows_logo.jpg" class="mask">
+                <div class="h1">Windows</div>
+                <div><a href="/info/network/osi_model.html" target="_" class="button">Click Here</a></div>
+            </div>
+
+            <div class="square">
+                <img src="/assets/images/computers/macos/macos_logo.png" class="mask">
+                <div class="h1">macOS</div>
+                <div><a href="https://medium.com/@laheshk/is-apple-a-design-company-f5c83514e261" target="_"
+                        class="button">Click Here</a></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="info_footer"></div>
+
+    <script>
+        function search_card() {
+            let input = document.getElementById('searchbar').value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('card');
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                }
+                else {
+                    x[i].style.display = "list-item";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

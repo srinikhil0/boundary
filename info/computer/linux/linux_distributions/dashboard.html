@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Distributions</title>
+    <link rel="stylesheet" href="/assets/css/net_info.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <!-- <link rel="stylesheet" href="/assets/css/google_translator.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+    <div class="body_wrapper">
+        <u>
+            <h1>linux Distributions</h1>
+        </u>
+
+        <div class="container2">
+            <div class="square">
+                <img src="/assets/images/computers/linux/linux_distribution/choosing_a_linux_distribution.gif" class="mask">
+                <div class="h1">Choosing A Linux Distrubution</div>
+                <div><a href="/info/computer/linux/linux_distributions/choosing_a_linux_distribution.html" target="_blank" class="button">Click Here</a></div>
+            </div>
+
+            <div class="square">
+                <img src="/assets/images/computers/linux/linux_distribution/questions.gif" class="mask">
+                <div class="h1">Questions to ASK</div>
+                <div><a href="/info/computer/linux/linux_distributions/questions_to_ask.html" target="_blank" class="button">Click Here</a></div>
+            </div>
+
+            <div class="square">
+                <img src="/assets/images/computers/linux/linux_distribution/planning.gif" class="mask">
+                <div class="h1">Linux Installation - Planning</div>
+                <div><a href="/info/computer/linux/linux_distributions/linux_installation_planning.html" target="_blank" class="button">Click Here</a></div>
+            </div>
+
+            <div class="square">
+                <img src="/assets/images/computers/linux/linux_distribution/software_choice.gif" class="mask">
+                <div class="h1">Linux Installation - Software Choice</div>
+                <div><a href="/info/computer/linux/linux_distributions/linux_installation_software_choices.html" target="_blank" class="button">Click Here</a></div>
+            </div>
+
+            <div class="square">
+                <img src="/assets/images/computers/linux/linux_distribution/install_source.gif" class="mask">
+                <div class="h1">Linux Installation - Install Source</div>
+                <div><a href="/info/computer/linux/linux_distributions/linux_installation_install_source.html" target="_blank" class="button">Click Here</a></div>
+            </div>
+
+            <div class="square">
+                <img src="/assets/images/computers/linux/linux_distribution/process.gif" class="mask">
+                <div class="h1">Linux Installation - Process</div>
+                <div><a href="/info/computer/linux/linux_distributions/linux_installation_process.html" target="_blank" class="button">Click Here</a></div>
+            </div>
+
+            <div class="square">
+                <img src="/assets/images/computers/linux/linux_distribution/warning.gif" class="mask">
+                <div class="h1">Linux Installation - Warning!</div>
+                <div><a href="/info/computer/linux/linux_distributions/linux_installation_warning.html" target="_blank" class="button">Click Here</a></div>
+            </div>
+
+        </div>
+
+        <a href="/info/computer/linux/linux_system_startup/dashboard.html" class="previous">&laquo;
+            Previous</a>
+        <a href="/info/computer/linux/graphical_user_interface/dashboard.html" class="next">Next &raquo;</a>
+        
+
+    </div>
+
+    <div id="info_footer"></div>
+
+    <script>
+        function search_card() {
+            let input = document.getElementById('searchbar').value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('card');
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                }
+                else {
+                    x[i].style.display = "list-item";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

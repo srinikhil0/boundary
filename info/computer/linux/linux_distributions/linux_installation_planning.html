@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Installation</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>Planning</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/linux_installation_planning.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        The partition layout needs to be decided at the time of installation; it can be difficult to
+                        changer later. While Linux systems handle multiple partitions by mounting them at specific
+                        points in the filesystem, and you can always modify the design later, it is always easier to try
+                        and get it right to begin with. <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/partitions_in_linux_hard_disk.png"
+                            alt="partitions_in_linux_hard_disk">
+                            <figcaption>Partitions in Linux Hard Disk</figcaption>
+                    </figure><br><br>
+                    <p>
+                        Nearly all installers provide a reasonable default layout, with either all space dedicated to
+                        normal files on one big partition and a smaller swap partition, or with separate partitions for
+                        some space-sensitive areas like <code>/home</code> and <code>/var</code>. You may need to
+                        override the defaults and do something different if you have special needs, or if you want to
+                        use more than one disk.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="questions_to_ask.html" class="previous">&laquo;
+        Previous</a>
+    <a href="linux_installation_software_choices.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

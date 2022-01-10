@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initial RAM Disk</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+    <div id="info_header"></div>
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>Initial RAM Disk</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/initial_ram_disk.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        The initramfs filesystem image contains programs and binary files that perform all actions
+                        needed to mount the proper root filesystem, like providing kernel functionality for the needed
+                        filesystem and device drivers for mass storage controllers with a facility called udev (for user
+                        device), which is responsible for figuring out which devices are present, locating the device
+                        drivers they need to operate properly, and loading them. After the root filesystem has been
+                        found, it is checked for errors and mounted. <br><br>
+
+                        The mount program instructs the operating system that a filesystem is ready for use, and
+                        associates it with a particular point in the overall hierarchy of the filesystem (the mount
+                        point). If this is successful, the initramfs is cleared from RAM and the init program on the
+                        root filesystem (/sbin/init) is executed. <br><br>
+
+                        init handles the mounting and pivoting over to the final real root filesystem. If special
+                        hardware drivers are needed before the mass storage can be accessed, they must be in the
+                        initramfs image. <br><br>
+
+                        <img src="/assets/images/computers/linux/initial_ram_disk.png" alt="initial_ram_disk"> <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="boot_loader_in_action.html" class="previous">&laquo; Previous</a>
+    <a href="text_mode_login.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>

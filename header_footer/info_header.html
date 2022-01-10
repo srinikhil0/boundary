@@ -1,0 +1,52 @@
+<div class="wrapper">
+    <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content1">
+            <div class="logo"><a href="/landingpage.html">Cyber</a></div>
+            <ul class="links">
+                <li><a href="/landingpage.html">Home</a></li>
+                <li><a href="/dictonary.html">Dictonary</a></li>
+                <li>
+                    <a href="#" class="desktop-link">Modules</a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Modules</label>
+                    <ul>
+                        <li><a href="/info/network/netinfo.html">Networking</a></li>
+                        <li><a href="/info/computer/computerinfo.html">Computers</a></li>
+                        <li><a href="/info/coding/codinginfo.html">Coding</a></li>
+                        <li><a href="/info/cyber_security/secinfo.html">Cyber Security Basics</a></li>
+                    </ul>
+                </li>
+                <li><a href="/attacks.html">Attacks</a></li>
+                <li><a href="/cyberlaw.html">Cyber Law</a></li>
+                <li><a href="/cybernews.html">Cyber News</a></li>
+                <li><a href="/casestudy.html">Case Studies</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+            <input type="text" id="searchbar" onkeyup="search_card()" placeholder="Type Something to Search...">
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+    </nav>
+</div>
+
+<script>
+    function search_card() {
+        let input = document.getElementById('searchbar').value
+        input = input.toLowerCase();
+        let x = document.getElementsByClassName('card');
+
+        for (i = 0; i < x.length; i++) {
+            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display = "none";
+            }
+            else {
+                x[i].style.display = "list-item";
+            }
+        }
+    }
+</script>

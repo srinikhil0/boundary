@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Installation</title>
+    <link rel="stylesheet" href="/assets/css/network/network1.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('#info_header').load('/header_footer/info_header.html')
+        });
+        $(function () {
+            $('#info_footer').load('/header_footer/info_footer.html')
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="info_header"></div>
+
+
+    <div class="out_article">
+        <div class="article">
+            <div class="in_article">
+                <h2>Software Choice</h2><br><br>
+                <div class="container-audio">
+                    <audio controls>
+                        <source src="/assets/audio/computer/linux/software_choices.mp3" type="audio/ogg">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                </div>
+                <div class="article_info">
+                    <p>
+                        All installations include the bare minimum software for running a Linux distribution. <br><br>
+                        Most installers also provide options for adding categories of software. Common applications
+                        (such as the Firefox web browser and LibreOffice office suite), developer tools (like the vi and
+                        emacs text editors), and other popular services (such as the Apache web server tools or MySQL
+                        database) are usually included. In addition, for any system with a graphical desktop, a chosen
+                        desktop (such as GNOME or KDE) is installed by default. <br><br>
+                        All installers set up some initial security features on the new system. One basic step consists
+                        of setting the password for the superuser (root) and setting up an initial user. In some cases
+                        (such as Ubuntu), only an initial user is set up; direct root login is not configured and root
+                        access requires logging in first as a normal user and then using sudo. Some distributions will
+                        also install more advanced security frameworks, such as SELinux or AppArmor. For example, all
+                        Red Hat-based systems including Fedora and CentOS always use SELinux by default, and Ubuntu
+                        comes with AppArmor up and running. <br><br>
+                    </p>
+                    <figure>
+                        <img src="/assets/images/computers/linux/software_choices.png" alt="software_choices">
+                        <figcaption>Software Choices</figcaption>
+                    </figure><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="linux_installation_planning.html" class="previous">&laquo;
+        Previous</a>
+    <a href="linux_installation_install_source.html" class="next">Next &raquo;</a>
+
+    <div id="info_footer"></div>
+
+</body>
+
+</html>
